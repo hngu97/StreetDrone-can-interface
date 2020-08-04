@@ -1,0 +1,351 @@
+VERSION "HNPBYYYYYYYYYYYYYYYYYYYYYYYYYYYYNNNNNNNNNN@4@(%%/4@'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PCAN_GPS StreetDrone Customer
+VAL_TABLE_ nDNR 3 "Reverse" 2 "Drive" 1 "Neutral" 0 "Unknown / Uninitialized" ;
+VAL_TABLE_ nvCar 0 "Slow (< 2km/h)" 1 "Positive vehicle speed" 2 "Negative vehicle speed" 3 "Unavailable" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Reserved_Byte_8 : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Reserved_Byte_7 : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Twist_Request_Min : 0|8@0- (1,0) [-128|127] "Nm-2" Vector__XXX
+ SG_ Twist_Request_Max : 0|8@0- (1,0) [-128|127] "Nm-2" Vector__XXX
+ SG_ Reserved_Byte_2 : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Reserved_Byte_1 : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Torque_Automation_Requested : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Automation_Requested : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Torque_Request : 0|8@0- (1,0) [-100|100] "%" Vector__XXX
+ SG_ Steer_Request : 0|8@0- (1,0) [-100|100] "%" Vector__XXX
+ SG_ Customer_Control_1_Alive : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Customer_Control_1_CRC : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Torque_Automation_State : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Steer_Automation_State : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Torque_Automation_Saturated : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Automation_Saturated : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Torque_Automation_Granted : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Torque_Automation_Available : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Automation_Granted : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steer_Automation_Available : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Torque_Request_Min : 0|8@0- (1,0) [-100|0] "%" Vector__XXX
+ SG_ Torque_Request_Max : 0|8@0- (1,0) [0|100] "%" Vector__XXX
+ SG_ Steer_Request_Min : 0|8@0- (1,0) [-100|0] "%" Vector__XXX
+ SG_ Steer_Request_Max : 0|8@0- (1,0) [0|100] "%" Vector__XXX
+ SG_ StreetDrone_Control_1_CRC : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ StreetDrone_Control_1_Alive : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Angular_Rate_Request : 0|16@0- (0.01,0) [-327.68|327.67] "rad/s" Vector__XXX
+ SG_ Linear_Velocity_Request : 0|16@0- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ Controller_Type_Request_Zs : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Controller_Type_State_Zs : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Linear_Velocity_Min : 0|16@0- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ Linear_Velocity_Max : 0|16@0- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ Angular_Rate_Min : 0|16@0- (0.01,0) [-327.68|327.67] "rad/s" Vector__XXX
+ SG_ Angular_Rate_Max : 0|16@0- (0.01,0) [-327.68|327.67] "rad/s" Vector__XXX
+ SG_ Angular_Rate_Actual : 0|16@0- (0.01,0) [-327.68|327.67] "rad/s" Vector__XXX
+ SG_ Linear_Velocity_Actual : 0|16@0- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ PRND_Request_Zs : 0|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 280 StreetDrone_Data_3: 8 Vector__XXX
+ SG_ RR_WheelSpeed_Rpm : 55|16@0- (0.1,0) [-3276.8|3276.7] "rpm" Vector__XXX
+ SG_ RL_WheelSpeed_Rpm : 39|16@0- (0.1,0) [-3276.8|3276.7] "rpm" Vector__XXX
+ SG_ FR_WheelSpeed_Rpm : 23|16@0- (0.1,0) [-3276.8|3276.7] "rpm" Vector__XXX
+ SG_ FL_WheelSpeed_Rpm : 7|16@0- (0.1,0) [-3276.8|3276.7] "rpm" Vector__XXX
+
+BO_ 260 Customer_Control_2: 8 Vector__XXX
+ SG_ Reserved_Byte_6 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Reserved_Byte_5 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Reserved_Byte_4 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Reserved_Byte_3 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Hazard_Warning_B : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Reserved_Byte_2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Reserved_Byte_1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Main_Beam_Command_B : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Dipped_Lights_Command_B : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Side_Lights_Command_B : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Right_Indicator_Command_B : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Left_Indicator_Command_B : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Horn_Command_B : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 279 StreetDrone_Data_2: 2 Vector__XXX
+ SG_ Remote_Auto_Mode_Ack_B : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PRND_Actual_Zs : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Main_Beam_B : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Dipped_Lights_B : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Side_Lights_B : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Right_Indicator_B : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Left_Indicator_B : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Reverse_Light_B : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Brake_Light_B : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Horn_B : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 278 StreetDrone_Diag_Error_Raw_Delta: 8 Vector__XXX
+ SG_ GCU_B_Delta_Error_Flags : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GCU_A_Delta_Error_Flags : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 277 StreetDrone_Diag_Error_Raw_B: 8 Vector__XXX
+ SG_ GCU_B_Signal_Error_Flags : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GCU_B_Sensor_Error_Flags : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GCU_B_CAN_Error_Flags : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GCU_B_ADC_Error_Flags : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 276 StreetDrone_Diag_Error_Raw_A: 8 Vector__XXX
+ SG_ GCU_A_ADC_Error_Flags : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GCU_A_CAN_Error_Flags : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GCU_A_Sensor_Error_Flags : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GCU_A_Signal_Error_Flags : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 273 StreetDrone_Diag_Error_Code: 8 StreetDrone
+ SG_ XCU_Error_Code : 32|16@1+ (1,0) [0|255] ""  Customer
+ SG_ XCU_Error_Time_Latched : 0|32@1+ (0.005,0) [0|21474836.475] "s"  Customer
+
+BO_ 275 StreetDrone_Diag_XCU_Time: 8 StreetDrone
+ SG_ XCU_Time_B : 32|32@1+ (0.001,0) [0|21474836.475] "s"  Customer
+ SG_ XCU_Time_A : 0|32@1+ (0.001,0) [0|21474836.475] "s"  Customer
+
+BO_ 274 StreetDrone_Diag_XCU_State: 8 StreetDrone
+ SG_ XCU_Internal_State_Latched_B : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ XCU_Internal_State_B : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ XCU_Internal_State_Latched_A : 47|8@0+ (1,0) [0|255] ""  Customer
+ SG_ XCU_Internal_State_A : 39|8@0+ (1,0) [0|255] ""  Customer
+ SG_ Torque_Automation_State_Latched : 27|4@0+ (1,0) [0|15] ""  Customer
+ SG_ Torque_Automation_State : 31|4@0+ (1,0) [0|15] ""  Customer
+ SG_ Steer_Automation_State_Latched : 19|4@0+ (1,0) [0|15] ""  Customer
+ SG_ Steer_Automation_State : 23|4@0+ (1,0) [0|15] ""  Customer
+ SG_ XCU_Power_Mode_Latched : 8|8@1+ (1,0) [0|255] ""  Customer
+ SG_ XCU_Power_Mode : 0|8@1+ (1,0) [0|255] ""  Customer
+
+BO_ 258 StreetDrone_Data_1: 7 StreetDrone
+ SG_ Base_Vehicle_HV_SOC : 55|8@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ Torque_Setpoint : 31|8@0- (1,0) [-100|100] "%"  Customer
+ SG_ Steer_Setpoint : 15|8@0- (1,0) [-100|100] "%"  Customer
+ SG_ Steer_Actual : 23|8@0- (1,0) [-128|127] "%"  Customer
+ SG_ Speed_Actual : 7|8@0+ (0.5,0) [0|127.5] "km/h"  Customer
+ SG_ Pedal_Actual : 39|8@0- (1,0) [-128|127] "%"  Customer
+ SG_ Brake_Actual : 47|8@0- (1,0) [0|100] "Bar"  Customer
+
+BO_ 257 Customer_Control_1: 8 Customer
+ SG_ Reserved_Byte_3 : 55|8@0+ (1,0) [0|255] ""  StreetDrone
+ SG_ Reserved_Byte_2 : 47|8@0+ (1,0) [0|255] ""  StreetDrone
+ SG_ Reserved_Byte_1 : 39|8@0+ (1,0) [0|255] ""  StreetDrone
+ SG_ Torque_Automation_Requested : 60|1@0+ (1,0) [0|1] ""  StreetDrone
+ SG_ Steer_Automation_Requested : 56|1@0+ (1,0) [0|1] ""  StreetDrone
+ SG_ Torque_Request : 31|8@0- (1,0) [-100|100] "%"  StreetDrone
+ SG_ Steer_Request : 23|8@0- (1,0) [-100|100] "%"  StreetDrone
+ SG_ Customer_Control_1_Alive : 15|8@0+ (1,0) [0|255] ""  StreetDrone
+ SG_ Customer_Control_1_CRC : 7|8@0+ (1,0) [0|255] ""  StreetDrone
+
+BO_ 256 StreetDrone_Control_1: 8 StreetDrone
+ SG_ Torque_Automation_State : 55|4@0+ (1,0) [0|15] ""  Customer
+ SG_ Steer_Automation_State : 51|4@0+ (1,0) [0|15] ""  Customer
+ SG_ Torque_Automation_Saturated : 62|1@0+ (1,0) [0|1] ""  Customer
+ SG_ Steer_Automation_Saturated : 58|1@0+ (1,0) [0|1] ""  Customer
+ SG_ Torque_Automation_Granted : 61|1@0+ (1,0) [0|1] ""  Customer
+ SG_ Torque_Automation_Available : 60|1@0+ (1,0) [0|1] ""  Customer
+ SG_ Steer_Automation_Granted : 57|1@0+ (1,0) [0|1] ""  Customer
+ SG_ Steer_Automation_Available : 56|1@0+ (1,0) [0|1] ""  Customer
+ SG_ Torque_Request_Min : 47|8@0- (1,0) [-100|0] "%"  Customer
+ SG_ Torque_Request_Max : 39|8@0- (1,0) [0|100] "%"  Customer
+ SG_ Steer_Request_Min : 31|8@0- (1,0) [-100|0] "%"  Customer
+ SG_ Steer_Request_Max : 23|8@0- (1,0) [0|100] "%"  Customer
+ SG_ StreetDrone_Control_1_CRC : 7|8@0+ (1,0) [0|255] ""  Customer
+ SG_ StreetDrone_Control_1_Alive : 15|8@0+ (1,0) [0|255] ""  Customer
+
+BO_ 272 StreetDrone_Diag_CAN: 8 StreetDrone
+ SG_ Customer_CAN_CRC_Errors_Count : 32|32@1+ (1,0) [0|4294967295] ""  Customer
+ SG_ Customer_CAN_Alive_Errors_Count : 0|32@1+ (1,0) [0|4294967295] ""  Customer
+
+BO_ 1536 BMC_Acceleration: 8 PCAN_GPS
+ SG_ Acceleration_X : 0|16@1- (3.91,0) [-20000|20000] "mG"  Customer
+ SG_ Acceleration_Y : 16|16@1- (3.91,0) [-20000|20000] "mG"  Customer
+ SG_ Acceleration_Z : 32|16@1- (3.91,0) [-20000|20000] "mG"  Customer
+ SG_ Temperature : 48|8@1- (0.5,24) [-40|87.5] "°C"  Customer
+ SG_ VerticalAxis : 56|2@1+ (1,0) [0|3] ""  Customer
+ SG_ Orientation : 58|3@1+ (1,0) [0|7] ""  Customer
+
+BO_ 1537 BMC_MagneticField: 6 PCAN_GPS
+ SG_ MagneticField_X : 0|16@1- (0.3,0) [-9830.4|9830.1] "µT"  Customer
+ SG_ MagneticField_Y : 16|16@1- (0.3,0) [-9830.4|9830.1] "µT"  Customer
+ SG_ MagneticField_Z : 32|16@1- (0.3,0) [-9830.4|9830.1] "µT"  Customer
+
+BO_ 1552 L3GD20_Rotation_A: 8 PCAN_GPS
+ SG_ Rotation_X : 0|32@1- (1,0) [-4000|4000] "°/s"  Customer
+ SG_ Rotation_Y : 32|32@1- (1,0) [-4000|4000] "°/s"  Customer
+
+BO_ 1553 L3GD20_Rotation_B: 4 PCAN_GPS
+ SG_ Rotation_Z : 0|32@1- (1,0) [-4000|4000] "°/s"  Customer
+
+BO_ 1568 GPS_Status: 3 PCAN_GPS
+ SG_ GPS_AntennaStatus : 0|8@1+ (1,0) [0|255] ""  Customer
+ SG_ GPS_NumSatellites : 8|8@1+ (1,0) [0|255] ""  Customer
+ SG_ GPS_NavigationMethod : 16|8@1+ (1,0) [0|255] ""  Customer
+
+BO_ 1569 GPS_CourseSpeed: 8 PCAN_GPS
+ SG_ GPS_Course : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "°"  Customer
+ SG_ GPS_Speed : 32|32@1- (1,0) [-3.4E+038|3.4E+038] "km/h"  Customer
+
+BO_ 1570 GPS_PositionLongitude: 7 PCAN_GPS
+ SG_ GPS_Longitude_Degree : 32|16@1+ (1,0) [0|359] "°"  Customer
+ SG_ GPS_Longitude_Minutes : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "'"  Customer
+ SG_ GPS_IndicatorEW : 48|8@1+ (1,0) [0|255] ""  Customer
+
+BO_ 1571 GPS_PositionLatitude: 7 PCAN_GPS
+ SG_ GPS_Latitude_Degree : 32|16@1+ (1,0) [0|359] "°"  Customer
+ SG_ GPS_Latitude_Minutes : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "'"  Customer
+ SG_ GPS_IndicatorNS : 48|8@1+ (1,0) [0|255] ""  Customer
+
+BO_ 1572 GPS_PositionAltitude: 4 PCAN_GPS
+ SG_ GPS_Altitude : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "m"  Customer
+
+BO_ 1573 GPS_Delusions_A: 8 PCAN_GPS
+ SG_ GPS_PDOP : 0|32@1- (1,0) [-3.4E+038|3.4E+038] ""  Customer
+ SG_ GPS_HDOP : 32|32@1- (1,0) [-3.4E+038|3.4E+038] ""  Customer
+
+BO_ 1574 GPS_Delusions_B: 4 PCAN_GPS
+ SG_ GPS_VDOP : 0|32@1- (1,0) [-3.4E+038|3.4E+038] ""  Customer
+
+BO_ 1575 GPS_DateTime: 6 PCAN_GPS
+ SG_ UTC_Year : 0|8@1+ (1,0) [0|255] ""  Customer
+ SG_ UTC_Month : 8|8@1+ (1,0) [0|255] ""  Customer
+ SG_ UTC_DayOfMonth : 16|8@1+ (1,0) [0|255] ""  Customer
+ SG_ UTC_Hour : 24|8@1+ (1,0) [0|255] ""  Customer
+ SG_ UTC_Minute : 32|8@1+ (1,0) [0|255] ""  Customer
+ SG_ UTC_Second : 40|8@1+ (1,0) [0|255] ""  Customer
+
+BO_ 1584 IO: 1 PCAN_GPS
+ SG_ Din1_Status : 0|1@1+ (1,0) [0|1] ""  Customer
+ SG_ Din2_Status : 1|1@1+ (1,0) [0|1] ""  Customer
+ SG_ Dout_Status : 2|1@1+ (1,0) [0|1] ""  Customer
+ SG_ SD_Present : 3|1@1+ (1,0) [0|1] ""  Customer
+ SG_ GPS_PowerStatus : 4|1@1+ (1,0) [0|1] ""  Customer
+ SG_ Device_ID : 5|3@1+ (1,0) [0|7] ""  Customer
+
+BO_ 1600 RTC_DateTime: 8 PCAN_GPS
+ SG_ RTC_Sec : 0|8@1+ (1,0) [0|255] ""  Customer
+ SG_ RTC_Min : 8|8@1+ (1,0) [0|255] ""  Customer
+ SG_ RTC_Hour : 16|8@1+ (1,0) [0|255] ""  Customer
+ SG_ RTC_DayOfWeek : 24|8@1+ (1,0) [0|255] ""  Customer
+ SG_ RTC_DayOfMonth : 32|8@1+ (1,0) [0|255] ""  Customer
+ SG_ RTC_Month : 40|8@1+ (1,0) [0|255] ""  Customer
+ SG_ RTC_Year : 48|16@1+ (1,0) [0|65535] ""  Customer
+
+BO_ 1616 Out_IO: 1 PCAN_GPS
+ SG_ Dout_Set : 0|1@1+ (1,0) [0|1] ""  Customer
+ SG_ GPS_SetPower : 1|1@1+ (1,0) [0|1] ""  Customer
+
+BO_ 1617 Out_PowerOff: 1 PCAN_GPS
+ SG_ Device_PowerOff : 0|1@1+ (1,0) [0|1] ""  Customer
+
+BO_ 1618 Out_Gyro: 1 PCAN_GPS
+ SG_ Gyro_SetScale : 0|2@1+ (1,0) [0|3] "°/s"  Customer
+
+BO_ 1619 Out_BMC_AccScale: 1 PCAN_GPS
+ SG_ Acc_SetScale : 0|3@1+ (1,0) [0|7] ""  Customer
+
+BO_ 1620 Out_SaveConfig: 1 PCAN_GPS
+ SG_ Config_SaveToEEPROM : 0|1@1+ (1,0) [0|1] ""  Customer
+
+BO_ 1621 Out_RTC_SetTime: 8 PCAN_GPS
+ SG_ RTC_SetSec : 0|8@1+ (1,0) [0|59] ""  Customer
+ SG_ RTC_SetMin : 8|8@1+ (1,0) [0|59] ""  Customer
+ SG_ RTC_SetHour : 16|8@1+ (1,0) [0|23] ""  Customer
+ SG_ RTC_SetDayOfWeek : 24|8@1+ (1,0) [0|6] ""  Customer
+ SG_ RTC_SetDayOfMonth : 32|8@1+ (1,0) [1|31] ""  Customer
+ SG_ RTC_SetMonth : 40|8@1+ (1,0) [1|12] ""  Customer
+ SG_ RTC_SetYear : 48|16@1+ (1,0) [1900|2099] ""  Customer
+
+BO_ 1622 Out_RTC_TimeFromGPS: 1 PCAN_GPS
+ SG_ RTC_SetTimeFromGPS : 0|1@1+ (1,0) [0|1] ""  Customer
+
+BO_ 1623 Out_Acc_FastCalibration: 4 PCAN_GPS
+ SG_ Acc_SetCalibTarget_X : 0|2@1+ (1,0) [0|3] ""  Customer
+ SG_ Acc_SetCalibTarget_Y : 8|2@1+ (1,0) [0|3] ""  Customer
+ SG_ Acc_SetCalibTarget_Z : 16|2@1+ (1,0) [0|3] ""  Customer
+ SG_ Acc_StartFastCalib : 24|1@1+ (1,0) [0|1] ""  Customer
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ BO_  "CycleTime" INT 0 10000;
+BA_DEF_DEF_  "CycleTime" 100;
+BA_ "CycleTime" BO_ 280 5;
+BA_ "CycleTime" BO_ 260 5;
+BA_ "CycleTime" BO_ 279 5;
+BA_ "CycleTime" BO_ 278 5;
+BA_ "CycleTime" BO_ 277 5;
+BA_ "CycleTime" BO_ 276 5;
+BA_ "CycleTime" BO_ 273 5;
+BA_ "CycleTime" BO_ 275 5;
+BA_ "CycleTime" BO_ 274 5;
+BA_ "CycleTime" BO_ 258 5;
+BA_ "CycleTime" BO_ 257 5;
+BA_ "CycleTime" BO_ 256 5;
+BA_ "CycleTime" BO_ 272 5;
+VAL_ 1536 VerticalAxis 0 "undefined" 1 "X Axis" 2 "Y Axis" 3 "Z Axis" ;
+VAL_ 1536 Orientation 0 "flat" 1 "flat upside down" 2 "landscape left" 3 "landscape right" 4 "portrait" 5 "portrait upside down" ;
+VAL_ 1568 GPS_AntennaStatus 0 "INIT" 1 "DONTKNOW" 2 "OK" 3 "SHORT" 4 "OPEN" ;
+VAL_ 1568 GPS_NavigationMethod 0 "INIT" 1 "NONE" 2 "2D" 3 "3D" ;
+VAL_ 1570 GPS_IndicatorEW 0 "INIT" 69 "East" 78 "North" 83 "South" 87 "West" ;
+VAL_ 1571 GPS_IndicatorNS 0 "INIT" 69 "East" 78 "North" 83 "South" 87 "West" ;
+VAL_ 1584 Din1_Status 0 "Off" 1 "On" ;
+VAL_ 1584 Din2_Status 0 "Off" 1 "On" ;
+VAL_ 1584 Dout_Status 0 "Off" 1 "On" ;
+VAL_ 1584 SD_Present 0 "False" 1 "True" ;
+VAL_ 1584 GPS_PowerStatus 0 "Off" 1 "On" ;
+VAL_ 1600 RTC_DayOfWeek 0 "Monday" 1 "Tuesday" 2 "Wednesday" 3 "Thursday" 4 "Friday" 5 "Saturday" 6 "Sunday" ;
+VAL_ 1616 Dout_Set 0 "Off" 1 "On" ;
+VAL_ 1616 GPS_SetPower 0 "Off" 1 "On" ;
+VAL_ 1617 Device_PowerOff 0 "False" 1 "True" ;
+VAL_ 1618 Gyro_SetScale 0 "±250 °/s" 1 "±500 °/s" 2 "±2000 °/s" 3 "±2000 °/s" ;
+VAL_ 1619 Acc_SetScale 1 "±2 G" 2 "±4 G" 3 "±8 G" 4 "±16 G" ;
+VAL_ 1620 Config_SaveToEEPROM 0 "False" 1 "True" ;
+VAL_ 1621 RTC_SetDayOfWeek 0 "Monday" 1 "Tuesday" 2 "Wednesday" 3 "Thursday" 4 "Friday" 5 "Saturday" 6 "Sunday" ;
+VAL_ 1621 RTC_SetMonth 1 "January" 2 "February" 3 "March" 4 "April" 5 "May" 6 "June" 7 "July" 8 "August" 9 "September" 10 "October" 11 "November" 12 "December" ;
+VAL_ 1622 RTC_SetTimeFromGPS 0 "False" 1 "True" ;
+VAL_ 1623 Acc_SetCalibTarget_X 0 "0 G" 1 "+1 G" 2 "-1 G" ;
+VAL_ 1623 Acc_SetCalibTarget_Y 0 "0 G" 1 "+1 G" 2 "-1 G" ;
+VAL_ 1623 Acc_SetCalibTarget_Z 0 "0 G" 1 "+1 G" 2 "-1 G" ;
+VAL_ 1623 Acc_StartFastCalib 0 "False" 1 "True" ;
+SIG_VALTYPE_ 1552 Rotation_X : 1;
+SIG_VALTYPE_ 1552 Rotation_Y : 1;
+SIG_VALTYPE_ 1553 Rotation_Z : 1;
+SIG_VALTYPE_ 1569 GPS_Course : 1;
+SIG_VALTYPE_ 1569 GPS_Speed : 1;
+SIG_VALTYPE_ 1570 GPS_Longitude_Minutes : 1;
+SIG_VALTYPE_ 1571 GPS_Latitude_Minutes : 1;
+SIG_VALTYPE_ 1572 GPS_Altitude : 1;
+SIG_VALTYPE_ 1573 GPS_PDOP : 1;
+SIG_VALTYPE_ 1573 GPS_HDOP : 1;
+SIG_VALTYPE_ 1574 GPS_VDOP : 1;
+

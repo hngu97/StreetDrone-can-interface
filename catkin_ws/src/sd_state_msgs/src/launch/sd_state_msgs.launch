@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="sd_state_msgs" type="sd_state_msgs_node" name="sd_state_msgs_node" />
+
+</launch>
